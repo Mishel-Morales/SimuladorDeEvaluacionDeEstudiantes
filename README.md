@@ -1,12 +1,74 @@
-# React + Vite
+## 📚 Simulador de Evaluación de Estudiantes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación desarrollada con React que simula el proceso de evaluación de estudiantes. Permite ingresar la cantidad de estudiantes, registrar sus datos (como nombre y calificaciones), mostrar una lista de estudiantes y finalmente presentar un resumen con estadísticas como promedio general, estudiante con mejor y peor desempeño, etc.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
 
-## Expanding the ESLint configuration
+- JavaScript (ES6+)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- HTML / CSS (puede ser personalizado con Tailwind, Bootstrap, etc.)
+
+## 🧩 Estructura de Componentes
+
+El proyecto está organizado en los siguientes componentes principales:
+
+- Estudiantes.jsx
+
+Este componente representa el contenedor general de la aplicación. Aquí se integran y coordinan todos los demás componentes.
+
+Responsabilidades:
+
+Manejar el estado global de la aplicación (lista de estudiantes, cantidad, calificaciones, etc.)
+
+Pasar props a los subcomponentes
+
+Controlar la lógica principal del simulador
+
+- FormularioCantidad.jsx
+
+Formulario para definir cuántos estudiantes serán evaluados.
+
+Responsabilidades:
+
+Solicitar al usuario la cantidad de estudiantes
+
+Validar que el número ingresado sea válido
+
+Comunicar la cantidad al componente principal (Estudiantes.jsx)
+
+- ListaEstudiantes.jsx
+
+Formulario dinámico que se genera con base en la cantidad de estudiantes definida.
+
+Responsabilidades:
+
+Permitir ingresar datos individuales por estudiante (nombre, nota, etc.)
+
+Validar los campos de entrada
+
+Comunicar los datos ingresados al componente principal
+
+- Resumen.jsx
+
+Muestra un resumen de los resultados obtenidos en la evaluación.
+
+## Responsabilidades:
+
+Calcular el promedio general
+
+Identificar al estudiante con la mejor y peor nota
+
+Mostrar un resumen claro y visual de la evaluación
+
+## 🧪 Funcionalidades Principales
+
+✔️ Definir número de estudiantes
+✔️ Ingresar datos individuales de cada estudiante
+✔️ Calcular promedio general
+✔️ Mostrar estudiante con mejor y peor calificación
+✔️ Interfaz interactiva y responsiva
+
+## 📸 Visualización del proyecto
+<img width="1422" height="755" alt="Captura desde 2025-09-19 16-22-01" src="https://github.com/user-attachments/assets/809734c0-60f0-4f07-80d9-b620a72ea5ba" />
